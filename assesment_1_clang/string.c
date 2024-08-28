@@ -4,7 +4,7 @@
 int main() 
 {
  
-       char  a[100], b[100],choice,ch;
+       char  a[100], b[100],cho,ch;
         int  con,x=0,y=0,le=0,cou=0,nm=0,vow=0,cons=0,sp=0,dig=0;
 
     do
@@ -26,23 +26,23 @@ int main()
 		 
 		
         printf("\nString Operations Menu:\n");
-        printf("1. Reverse a string\n");
-        printf("2. Concatenate two strings\n");
-        printf("3. Check if a string is a palindrome\n");
+        printf("1. reverse a string\n");
+        printf("2. Concatenation\n");
+        printf("3. Palindrome\n");
         printf("4. Copy a string\n");
-        printf("5. Find the length of a string\n");
-        printf("6. Find the frequency of a character in a string\n");
-        printf("7. Find the number of vowels and consonet in a string\n");
-        printf("8. Find the number of blank space and digits in a string\n");
+        printf("5. Length of the string\n");
+        printf("6. Frequency of character in s string\n");
+        printf("7. Find number of vowels and consonants\n");
+        printf("8. Find number of blank spaces and digits \n");
         printf("9. Exit\n");
 
-        printf("Enter your choice (1-9): ");
-        scanf(" %c", &choice);
+        printf("Enter your cho (1-9): ");
+        scanf(" %c", &cho);
 
-        switch (choice) {
+        switch (cho) {
             case '1':
                 printf("Enter a string to reverse: ");
-                scanf(" %[^\n]s", a);
+                gets(a);
                 
                 for(x=0; a[x]!='\0';x++) 
                 {
@@ -57,15 +57,15 @@ int main()
                 break;
             case '2':
                 printf("Enter the first string: ");
-                scanf(" %[^\n]s", a);
+                gets(a);
                 printf("Enter the second string: ");
-                scanf(" %[^\n]s", b);
+                gets(b);
                 strcat(a,b);
                 printf("\n Concate String Is : %s",&a);
                 break;
             case '3':
              	printf("\n Enter name :");
-	            scanf("%s",&a);
+	            gets(a);
 	while(a[x]!='\0')	
 	{
 		le++;
@@ -91,45 +91,39 @@ int main()
 			}
 		}
 	}
-	if(cou!=0)
+	if(cou==0)
 	{
-		printf("\n Not Palindrome");
+		printf("\n Palindrome");
 		
 	}
 	else
 	{
-		printf("\n palindrome");
+		printf("\n not palindrome");
 	}
 	
                 break;
             case '4':
                 printf("\nEnter a string  1: ");
-                scanf(" %[^\n]s", a);
+                gets(a);
                 printf("\nEnter a string 2: ");
-                scanf(" %[^\n]s", b);
+                gets(b);
                 strcpy(a,b);
                 printf("\n string 1 %s:",a);
-                
-                //code
                 break;
             case '5':
                 printf("Enter a string to find its length: ");
-                scanf(" %[^\n]s", a);
-               // printf("Enter nm : ");
-	           // scanf(" %s",&nm);
-
-	for(x=0;a[x]!='\0';x++)
-	{
-		
-		nm++;
-	}
-	printf("\n le  is : %d",nm);
-                //code
+                gets(a);
+                for(x=0;a[x]!='\0';x++)
+            	{
+			      nm++;
+	            }
+            	printf("\n length  is : %d",nm);
+                
                 break;
             case '6':
                 printf("Enter a string: ");
-                scanf(" %[^\n]s", a);
-                printf("Enter the character to find its frequency: ");
+                gets(a);
+                printf("Enter the character: ");
                 scanf(" %c", &ch);
                  for (x = 0; a[x] != '\0'; x++) 
 				 {
@@ -140,18 +134,18 @@ int main()
    				 }
 
              printf("Frequency of '%c' = %d\n",ch,le);
-               //code
+               
                 break;
             case '7':
                printf("Enter a string: ");
-               scanf(" %[^\n]s", a);
+               gets(a);
 
                 for (x = 0; a[x] != '\0'; x++)
 				{
                   char ch = tolower(a[x]); 
                    if (ch >= 'a' && ch <= 'z') 
 				   { 
-                   if (ch == 'a' || ch == 'e' || ch == 'x' || ch == 'o' || ch == 'u') 
+                   if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') 
 				   {
                     vow++;
                    }    
@@ -164,11 +158,11 @@ int main()
                  printf("Number of vowels: %d\n", vow);
                 printf("Number of consonent: %d\n", cons);
     
-                //code
+                
                 break;
             case '8':
                 printf("Enter a string: ");
-                scanf(" %[^\n]s", a);
+                gets(a);
                 for (x = 0; a[x] != '\0'; x++) 
 				{
        				 if (isspace(a[x]))
@@ -184,17 +178,17 @@ int main()
     printf("Number of blank space: %d\n", sp);
     printf("Number of digits: %d\n", dig);
 
-                //code
+                
                 break;
             case '9':
                 printf("Exiting the program.\n");
                 return 0;
             default:
-                printf("Invalid choice.\n");
+                printf("Invalid  choice.\n");
         }
 
         printf("\nDo you want to continue <<press 1 to conytinue>>");
-        scanf("%d",&con);
+        scanf("%d",&con);	
     } while (con==1);
     
 }
