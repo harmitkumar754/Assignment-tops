@@ -1,0 +1,19 @@
+## What do you understand By Database?
+
+-->A database is a collection of organized information that is stored electronically in a computer system. 
+Databases can store any type of data, including words, numbers, images, videos, and files. 
+They can be used to store and manage large amounts of structured and unstructured data, and they
+can support a wide range of activities, including data storage, data analysis, and data management. 
+
+-->Databases are typically controlled by a database management system (DBMS), which acts as an interface between the database 
+and its end users or programs. The DBMS allows users to store, retrieve, and edit data, and also provides core facilities to administer
+ the database. Some examples of popular DBMSs include MySQL, Microsoft Access, Microsoft SQL Server, FileMaker Pro, 
+Oracle Database, and dBASE
+
+-->There are many different types of databases, including relational databases, object-oriented databases, and NoSQL databases. 
+For example, graph databases highlight the relationships between various data points, storing relationships right next to the data itself. 
+This allows users to immediately see how various data points are connected to each other. 
+
+-->Databases are common for use cases big and small, from massive websites to small businesses or small groups of people.
+They make accessing information using a computer much easier, and once you understand what databases are, you might even 
+want to build your own databases. 
