@@ -164,16 +164,16 @@ int main()
                 printf("Enter a string: ");
                 gets(a);
                 for (x = 0; a[x] != '\0'; x++) 
-				{
-       				 if (isspace(a[x]))
-						{
-           				 	sp++;
+			{
+				int stt=a[x];
+       				 if (stt==32)
+					{
+           				 	spaces++;
         				}
-					 else if (isdigit(a[x])) 
-						{
-            				dig++;
-        				}
-   				}				
+				else if (stt>=48 && stt<=57) 
+					{
+            					digits++;
+        				}			
 
     printf("Number of blank space: %d\n", sp);
     printf("Number of digits: %d\n", dig);
