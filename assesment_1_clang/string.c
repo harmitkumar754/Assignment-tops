@@ -24,7 +24,7 @@ int main()
 	    dig = 0;
 		 
 		
-        printf("\nString Operations Menu:\n");
+        printf("\nStringg Operations Menu:\n");
         printf("1. reverse a string\n");
         printf("2. Concatenation\n");
         printf("3. Palindrome\n");
