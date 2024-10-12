@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *
+         {
+            box-sizing: border-box;
+         }
+        .row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(11, 200px);
+           grid-gap: 10px;
+            background-color: black;
+            /* justify-content: space-evenly; */
+            grid-template-areas: 
+                "img1 img2 img3 img3" 
+                "img4 img4 img5 img6"
+                 "img7 img8 img9 img9"
+             "img10 img10 img11 img12"
+             "img13 img14 img15 img15"
+             "img16 img17 img17 img17"
+             "img18 img18 img18 img19"
+             "img20 img21 img22 img23"
+             "img24 img24 img25 img25"
+             "img26 img26 img27 img28"
+             "img29 img29 img30 img30";
+
+            
+        }
+        
+       
+        .row img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            transition:1s;
+        }
+        /* img
+        {
+            transition: 1s;
+            
+            
+        } */
+        img:hover
+        {
+            transform: scale(1.05);
+        }
+
+        .img1
+        {
+            grid-area: img1;
+        }
+        .img2
+        {
+            grid-area: img2;
+        }
+        .img3
+        {
+            grid-area: img3;
+        }
+        .img4
+        {
+            grid-area: img4;
+        }
+        .img5
+        {
+            grid-area: img5;
+        }
+        .img6
+        {
+            grid-area: img6;
+        }
+        .img7
+        {
+            grid-area: img7;
+        }
+        .img8
+        {
+            grid-area: img8;
+        }
+        .img9
+        {
+            grid-area: img9;
+        }
+        .img10
+        {
+            grid-area: img10;
+        }
+        .img11
+        {
+            grid-area: img11;
+        }
+        .img12
+        {
+            grid-area: img12;
+        }
+        .img13
+        {
+            grid-area: img13;
+        }
+        .img14
+        {
+            grid-area: img14;
+        }
+        .img15
+        {
+            grid-area: img15;
+        }
+        .img16
+        {
+            grid-area: img16;
+        }
+        .img17
+        {
+            grid-area: img17;
+        }
+        .img18
+        {
+            grid-area: img18;
+        }
+        .img19
+        {
+            grid-area: img19;
+        }
+        .img20
+        {
+            grid-area: img20;
+        }
+        .img21
+        {
+            grid-area: img21;
+        }
+        .img22
+        {
+            grid-area: img22;
+        }
+        .img23
+        {
+            grid-area: img23;
+        }
+        .img24
+        {
+            grid-area: img24;
+        }
+        .img25
+        {
+            grid-area: img25;
+        }
+        .img26
+        {
+            grid-area: img26;
+        }
+        .img27
+        {
+            grid-area: img27;
+        }
+        .img28
+        {
+            grid-area: img28;
+        }
+        .img29
+        {
+            grid-area: img29;
+        }
+        .img30
+        {
+            grid-area: img30;
+        }
+        
+      
+       
+    </style>
+</head>
+<body>
+
+    <div class="row">
+       
+         <img alt="ok"  class="img1"   src="https://picsum.photos/200/300?random=1"> 
+         <img alt="ok"  class="img2"  src="https://picsum.photos/200/300?random=2"> 
+         <img alt="ok"  class="img3"  src="https://picsum.photos/200/300?random=3"> 
+         <img alt="ok"  class="img4"  src="https://picsum.photos/200/300?random=4"> 
+         <img alt="ok"  class="img5"  src="https://picsum.photos/200/300?random=5"> 
+         <img alt="ok"  class="img6"  src="https://picsum.photos/200/300?random=6"> 
+         <img alt="ok"  class="img7"  src="https://picsum.photos/200/300?random=7"> 
+         <img alt="ok"  class="img8"  src="https://picsum.photos/200/300?random=8"> 
+         <img alt="ok"  class="img9"  src="https://picsum.photos/200/300?random=9"> 
+         <img alt="ok"  class="img10" src="https://picsum.photos/200/300?random=10"> 
+         <img alt="ok"  class="img11" src="https://picsum.photos/200/300?random=11"> 
+         <img alt="ok"  class="img12" src="https://picsum.photos/200/300?random=12"> 
+         <img alt="ok"  class="img13" src="https://picsum.photos/200/300?random=13"> 
+         <img alt="ok"  class="img14" src="https://picsum.photos/200/300?random=14"> 
+         <img alt="ok"  class="img15" src="https://picsum.photos/200/300?random=15"> 
+         <img alt="ok"  class="img16" src="https://picsum.photos/200/300?random=16"> 
+         <img alt="ok"  class="img17" src="https://picsum.photos/200/300?random=17"> 
+         <img alt="ok"  class="img18" src="https://picsum.photos/200/300?random=18"> 
+         <img alt="ok"  class="img19" src="https://picsum.photos/200/300?random=19"> 
+         <img alt="ok"  class="img20" src="https://picsum.photos/200/300?random=20"> 
+         <img alt="ok"  class="img21" src="https://picsum.photos/200/300?random=21"> 
+         <img alt="ok"  class="img22" src="https://picsum.photos/200/300?random=22"> 
+         <img alt="ok"  class="img23" src="https://picsum.photos/200/300?random=23"> 
+         <img alt="ok"  class="img24" src="https://picsum.photos/200/300?random=24"> 
+         <img alt="ok"  class="img25" src="https://picsum.photos/200/300?random=25"> 
+         <img alt="ok"  class="img26" src="https://picsum.photos/200/300?random=26"> 
+         <img alt="ok"  class="img27" src="https://picsum.photos/200/300?random=27"> 
+         <img alt="ok"  class="img28" src="https://picsum.photos/200/300?random=28"> 
+         <img alt="ok"  class="img29" src="https://picsum.photos/200/300?random=29"> 
+         <img alt="ok"  class="img30" src="https://picsum.photos/200/300?random=30">       
+            
+    </div>
+</body>
+</html>

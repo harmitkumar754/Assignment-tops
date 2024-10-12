@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .x
+        {
+            height: 670px;
+            width: 100%;
+            background: url(4.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+            position: relative;
+        
+        }
+        .y
+        {
+        
+            transform: translate(0px,50px);
+
+        }
+        h1
+        {
+            color: white;
+            padding-left:590px ;
+            padding-top: 200px;
+            letter-spacing: 2px;
+
+        }
+        p
+        {
+            color: white;
+            text-align: center;
+
+        }
+       /* img
+        {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+        } */
+        .img1
+        {
+            background: url(https://assets.entrepreneur.com/content/3x2/2000/20150820205507-single-man-outdoors-happy-bliss.jpeg);
+            position: absolute;
+            transform: translate(200px,550px);
+            height: 70px;
+            width: 70px;
+            background-color: aliceblue;
+            border-radius: 50%;
+            background-size: cover;
+        }
+        .img2
+        {
+            background: url(https://as1.ftcdn.net/v2/jpg/02/79/90/20/1000_F_279902034_kBjKUJvC8y19AdkEJ3L3emqxVqY5K7Cv.jpg);
+            position: absolute;
+            transform: translate(400px,480px);
+            height: 70px;
+            width: 70px;
+            background-color: aliceblue;
+            border-radius: 50%;
+          background-position: -20px;
+            background-size: cover;
+        }
+        .img3
+        {
+            background: url(https://t3.ftcdn.net/jpg/02/85/98/32/240_F_285983211_MgoZj1sj9Rfou8GRHtCvHtdgyEMxGEFS.jpg);
+            position: absolute;
+            transform: translate(600px,420px);
+            height: 70px;
+            width: 70px;
+            background-color: aliceblue;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: -10px;
+            background-repeat: no-repeat;
+            
+        }
+        .img4
+        {
+            background: url(https://t3.ftcdn.net/jpg/08/20/91/86/240_F_820918606_6gq7WNQF1AVO0UGLWWdkKgKqavG33dfp.jpg);
+            position: absolute;
+            transform: translate(800px,435px);
+            height: 70px;
+            width: 70px;
+            background-color: aliceblue;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: -20px;
+            background-repeat: no-repeat;
+            
+        }
+        .img5
+        {
+            background: url(https://as1.ftcdn.net/v2/jpg/08/77/81/18/1000_F_877811858_SiMwvU995ccZE7nh7PdVkAINbXlmhJnN.jpg);
+            position: absolute;
+            transform: translate(1000px,475px);
+            height: 70px;
+            width: 70px;
+            background-color: aliceblue;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: -20px;
+            background-repeat: no-repeat;
+            
+        }
+        .img1:hover,.img2:hover,.img3:hover,.img4:hover,.img5:hover{
+           filter: saturate(400%)
+        }
+        svg
+        {
+            margin-top: 100px;
+        }
+        .img1:hover+.text1::before
+        {
+            position: absolute;
+            transform: translate(225px,630px);
+            content: "Web Designer \A Ui Ux designer";
+            white-space: pre-wrap;
+            font-weight: bold;
+            color: white;
+        }
+        .img2:hover + .text2::before
+        {
+            position: absolute;
+            transform: translate(400px,590px);
+            content: "App Developer \A Flutter kotline ";
+            white-space: pre-wrap;
+            font-weight: bold;
+            color:white;
+        }
+        .img3:hover + .text3::before
+        {
+            position: absolute;
+            transform: translate(600px,550px);
+            content: "Web Developer \A React PHP Python ";
+            white-space: pre-wrap;
+            font-weight: bold;
+            color: white;
+        }
+        .img4:hover + .text4::before
+        {
+            position: absolute;
+            transform: translate(800px,530px);
+            content: "Ai Developer \A  Python JAVA ";
+            white-space: pre-wrap;
+            font-weight: bold;
+            color: white;
+        }
+        .img5:hover +  .text5::before
+        {
+            position: absolute;
+            transform: translate(1000px,580px);
+            content: "Graphics Designer \A  Photoshop vfx ";
+            white-space: pre-wrap;
+            font-weight: bold;
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <div class="x">
+        <div class="img1"></div>
+        <div class="text1"></div>
+
+        <div class="img2"></div>
+        <div class="text2"></div>
+
+        <div class="img3"></div>
+        <div class="text3"></div>
+
+        <div class="img4"></div>
+        <div class="text4"></div>
+
+        <div class="img5"></div>
+        <div class="text5"></div>
+       <h1>OUR TEAM</h1> 
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit okokkokok .</p>
+       <p>________________*_______________</p>
+            
+    
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff5500" fill-opacity="0.6" d="M0,320L48,304C96,288,192,256,288,218.7C384,181,480,139,576,112C672,85,768,75,864,96C960,117,1056,171,1152,165.3C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+           
+    </div>
+</body>
+</html>
