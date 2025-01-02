@@ -1,0 +1,25 @@
+<!-- 10.Write a JavaScript program using a forloop to print numbers from 1 to 10. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <label>Enter A Number</label>
+    <input type="number" id="number" placeholder="Enter a number" >
+    <button onclick="check()">Submit</button>
+
+    <h3></h3>
+    <script>
+         function check() {
+            document.querySelector('h3').innerHTML = "";
+             var number = document.getElementById("number").value;
+             for (var i = 1; i <= number; i++) {
+                 document.querySelector('h3').innerHTML += i + "<br>";
+             }
+         }
+    </script>
+ </body>
+ </html>

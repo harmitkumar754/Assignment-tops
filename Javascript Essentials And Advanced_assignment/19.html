@@ -1,0 +1,29 @@
+<!-- 19.• Create an HTML page with a paragraph (<p>) that displays "Hello, World!".
+    • Use JavaScript to:
+    • Change the text inside the paragraph to "JavaScript is fun!".
+    • Change the color of the paragraph to blue. -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+       
+    </head>
+    <body>
+        <p>Hello World!</p>
+        <button id="btn" onclick="chenge()">Click Me</button>
+        <script>
+            var p = document.querySelector("p");
+            var btn = document.getElementById("btn");
+            
+            function chenge() {
+            p.textContent = "JavaScript is fun!";
+            p.style.color = "blue";
+
+            }
+           
+        </script>
+    </body>
+    </html>
+    

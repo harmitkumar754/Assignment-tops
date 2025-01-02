@@ -1,0 +1,35 @@
+<!-- 15.• Declare an array of fruits (["apple", "banana", "cherry"]). Use JavaScript to:
+• Add a fruit to the end of the array.
+• Remove the first fruit from the array.
+• Log the modified array to the console -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            color: blue;
+            display: inline;
+        }
+        h3 {
+            color: green;
+            display: inline;
+        }
+        </style>
+</head>
+<body>
+    <h2>Original Array</h2>&nbsp;&nbsp;=>&nbsp;&nbsp;<h3 id="og"></h3><br>
+    <h2>Add End Item</h2>&nbsp;&nbsp;=>&nbsp;&nbsp;<h3 id="ag"></h3><br>
+    <h2>Remove First Item</h2>&nbsp;&nbsp;=>&nbsp;&nbsp;<h3 id="rg"></h3><br>
+    <script>
+        var fruits = ["apple", "banana", "cherry"];
+        document.getElementById("og").innerHTML = fruits;
+        fruits.push("mango");
+        document.getElementById("ag").innerHTML = fruits;
+        fruits.shift();
+        document.getElementById("rg").innerHTML = fruits;
+    </script>
+</body>
+</html>

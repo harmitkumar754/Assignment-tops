@@ -1,0 +1,39 @@
+<!-- 17.Create a JavaScript object carwith properties brand, model, and year. Use
+JavaScript to:
+• Access and print the car’s brand and model.
+• Update the yearproperty.
+• Add a new property colorto the car object. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>car Brand is <span id="br"></span> , Model is <span id="mod"></span> And Year is <span id="ye"></span></h2>
+    <button onclick="update()">Update Year And Add Color</button>
+    <h2>car Brand is <span id="br1"></span> , Model is <span id="mod1"></span> , Year is <span id="ye1"></span> And Color is <span id="co1"></span></h2>
+<script>
+    var car = {
+        brand: "Toyota",
+        model: "Corolla",
+        year: 2015
+    };
+    document.getElementById("br").innerHTML = car.brand;
+    document.getElementById("mod").innerHTML = car.model;
+    document.getElementById("ye").innerHTML = car.year;
+
+    function update() {
+        car.year = 2020;
+        document.getElementById("ye1").innerHTML = car.year;
+        
+        document.getElementById("br1").innerHTML = car.brand;
+        document.getElementById("mod1").innerHTML = car.model;
+        car.color = "Black"; 
+        document.getElementById("co1").innerHTML = car.color;
+    }
+
+</script>
+</body>
+</html>

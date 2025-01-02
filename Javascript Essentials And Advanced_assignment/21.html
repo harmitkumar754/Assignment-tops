@@ -1,0 +1,24 @@
+<!-- 20.Create a digital clock that updates every second using setInterval(). -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h2></h2>
+    <script>
+         function updateClock() {
+             var now = new Date();
+             var hours = now.getHours();
+             var minutes = now.getMinutes();
+             var seconds = now.getSeconds();
+             var timeString = hours + ':' + minutes + ':' + seconds;
+             document.querySelector('h2').textContent = timeString;
+         }
+         setInterval(updateClock, 1000);
+    </script>
+ </body>
+
+ </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do-While Loop</title>
+    
+</head>
+<body>
+    <h1>Enter a Number Greater Than 10</h1>
+    <button onclick="getNumber()">Start</button>
+    <p id="ans"></p>
+
+    <script>
+        function getNumber() {
+            let number;
+            do {
+                number = prompt("Enter a number greater than 10: ");
+                if (isNaN(number)) {
+                    alert("Please enter a valid number.");
+                } else if (number <= 10) {
+                    alert("The number must be greater than 10. Try again.");
+                }
+            } while (isNaN(number) || number <= 10);
+
+            document.getElementById("ans").innerHTML = `You entered a valid number: ${number}`;
+        }
+    </script>
+</body>
+</html>

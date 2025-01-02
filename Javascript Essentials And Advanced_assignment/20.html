@@ -1,0 +1,28 @@
+<!-- 20.Write a program that changes the background color of a webpage after 5 
+secondsusing setTimeout(). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ok{
+            background-color: red;
+            height: 300px;
+            width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="ok">
+
+    </div>
+    <script>
+        setTimeout(() => {
+            document.querySelector('.ok').style.backgroundColor = "green";
+        }, 5000);
+    </script>
+</body>
+</html>
